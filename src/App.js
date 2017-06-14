@@ -10,7 +10,7 @@ class App extends Component {
         <ul className="Nav">
           <li><Link to="/Pies">Pies</Link></li>
           <li><Link to="/Activism">Activism</Link></li>
-          <li><Link to="/Activism">Allies</Link></li>
+          <li><Link to="/Allies">Allies</Link></li>
         </ul>
         <div className="Content">
         STUFF
