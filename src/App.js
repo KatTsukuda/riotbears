@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import './App.css';
 
 class App extends Component {
@@ -7,13 +8,14 @@ class App extends Component {
       <div className="App">
         <h2>Riot Bears</h2>
         <ul className="Nav">
-          <li>Pies</li>
-          <li>Activism</li>
-          <li>Allies</li>
+          <li><Link to="/Pies">Pies</Link></li>
+          <li><Link to="/Activism">Activism</Link></li>
+          <li><Link to="/Activism">Allies</Link></li>
         </ul>
         <div className="Content">
         STUFF
         </div>
+        {this.props.children}
       </div>
     );
   }
