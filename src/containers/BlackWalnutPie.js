@@ -28,7 +28,7 @@ class BlackWalnut extends Component {
         </div>
         <h5 className="PieRecipes">
           Black Walnut Pie
-          <a className="waves-effect waves-light btn" value="Hearts" onClick={this._handleHeartsClick}><li className={heartsClass}>{this.state.hearts}</li><i className="fa fa-heart" aria-hidden="true"></i></a>
+          <a className="waves-effect waves-light btn" value="Hearts" onClick={this._handleHeartsClick}><li className={heartsClass}>{this.state.hearts}</li> ♥</a>
         </h5>
         <img src={BlackWalnutPie} className="PiePic" alt="Black Walnut Pie" />
         <table>
