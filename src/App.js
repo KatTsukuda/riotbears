@@ -12,51 +12,27 @@ class App extends Component {
       <div className="App">
         <Link to="/"><h2>Riot Bears</h2></Link>
         <ul className="Nav">
-          <li><Link to="/Pies">Pies</Link></li>
-          <li><Link to="/Activism">Activism</Link></li>
-          <li><Link to="/Allies">Allies</Link></li>
+          <li><Link to="/">Home</Link></li>
         </ul>
         <div>
           <div className="BearTypes">
           <li className="Bear">
             <img src={Grizzly} className="Grizzly" alt="Grizzly" />
             <p><b>Merp</b>
-              <br />Favorite Pie: Black Walnut
-              <br />Cause: Sustainble Food
-              <br />Talent: Polka Dancing
-              <br /><a className="waves-effect waves-light btn">Sponsor</a>
+              <br />Spirit Pie: Black Walnut
+              <br /><Link to="/BlackWalnut"><a className="waves-effect waves-light btn"><i className="fa fa-heart" aria-hidden="true"></i></a></Link>
             </p>
           </li>
           <li className="Bear">
             <img src={Polar} className="Polar" alt="Polar" />
             <p><b>Derp</b>
-              <br />Favorite Pie: Baked Alaska
-              <br />Cause: Clean Energy
-              <br />Talent: Sledding
-              <br /><a className="waves-effect waves-light btn">Sponsor</a>
-            </p>
-          </li>
-          <li className="Bear">
-            <img src={Sloth} className="Sloth" alt="Sloth" />
-            <p><b>Merpity</b>
-              <br />Favorite Pie: Peach Rasberry
-              <br />Cause: Healthcare
-              <br />Talent: Baking
-              <br /><a className="waves-effect waves-light btn">Sponsor</a>
-            </p>
-          </li>
-          <li className="Bear">
-            <img src={Spectacled} className="Spectacled" alt="Spectacled" />
-            <p className="bear-files"><b>Derpity</b>
-              <br />Favorite pie: Sweet Potato
-              <br />Cause: Clean Water
-              <br />Talent: Coding
-              <br /><a className="waves-effect waves-light btn">Sponsor</a>
+              <br />Spirit Pie: Blackberry Pear
+              <br /><a className="waves-effect waves-light btn"><i className="fa fa-heart" aria-hidden="true"></i></a>
             </p>
           </li>
           </div>
         </div>
-        <div className="Content">
+        <div className="Pies">
         {this.props.children}
         </div>
       </div>
