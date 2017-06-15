@@ -9,15 +9,11 @@ a {
 
 .Nav li {
   text-transform: uppercase;
-  margin: 0 10px;
+  margin: 0 10px 30px 10px;
 }
 
 li {
     display: inline-block;
-}
-
-li.Bear {
-  margin: 15px;
 }
 
 h2 {
@@ -25,7 +21,7 @@ h2 {
 }
 
 .btn {
-  margin: 15px 0 0 0;
+  margin-left: 10px;
   background-color: #ae6d8b;
 }
 
@@ -41,8 +37,13 @@ h2 {
   margin-left: 35px;
 }
 
+/* Bear Profiles */
+li.Bear {
+  margin: 15px;
+}
+
 img {
-  height: 200px;
+  height: 300px;
 }
 
 .BearTypes {
@@ -50,6 +51,9 @@ img {
 }
 
 /*Recipe Table*/
+h5.PieRecipes {
+  text-align: center;
+}
 th {
   width: 50%;
 }
@@ -57,7 +61,7 @@ table {
   width: 80%;
 }
 img.PiePic {
-  margin: 100px 0;
+  margin: 80px 0;
   width: 30%;
   height: auto;
   position: absolute;

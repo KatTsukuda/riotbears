@@ -2,10 +2,34 @@ import React, {Component} from 'react';
 import BlackWalnutPie from './blackwalnutpie.jpg';
 
 class BlackWalnut extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      hearts: "5"
+    }
+    this._handleHeartsClick = this._handleHeartsClick.bind(this)
+  }
+
+  _handleHeartsClick (e) {
+  e.preventDefault()
+  let newHeart = +this.state.hearts + 1;
+  this.setState({
+    hearts: newHeart
+  })
+}
+
   render() {
+    let heartsClass = 'hearts';
+
     return (
       <div>
-        <h5 className="PieRecipes">Black Walnut Pie</h5>
+        <div>
+
+        </div>
+        <h5 className="PieRecipes">
+          Black Walnut Pie
+          <a className="waves-effect waves-light btn" value="Hearts" onClick={this._handleHeartsClick}><li className={heartsClass}>{this.state.hearts}</li><i className="fa fa-heart" aria-hidden="true"></i></a>
+        </h5>
         <img src={BlackWalnutPie} className="PiePic" alt="Black Walnut Pie" />
         <table>
           <thead>
