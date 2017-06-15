@@ -3,21 +3,48 @@
   margin: 15px 50px;
 }
 
+a {
+  color: #ae6d8b;
+}
+
+.Nav li {
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
 li {
-  display: inline-block;
-  margin: 0 25px;
+    display: inline-block;
+}
+
+li.Bear {
+  margin: 15px;
+}
+
+h2 {
+  color: #000000;
+}
+
+.btn {
+  margin: 15px 0 0 0;
+  background-color: #ae6d8b;
+}
+
+.btn:hover {
+  background-color: #ad517a;
 }
 
 .Content {
   text-align: left;
 }
 
-hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
+.Subject {
+  margin-left: 35px;
+}
+
+img {
+  height: 300px;
+}
+
+.BearTypes {
+  margin: 20px 0;
 }

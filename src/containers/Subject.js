@@ -1,9 +1,18 @@
 import React, {Component} from 'react';
+import Grizzly from '../grizzly.png';
+import Polar from '../polar.png';
+import Sloth from '../sloth.png';
+import Spectacled from '../spectacled.png';
 
 class Subject extends Component {
   render() {
     return (
-      <h3>Riot Bears Guide to</h3>
+      <div>
+        <h5 className="Subject">Hello</h5>
+        <div className="BearTypes">
+
+        </div>
+      </div>
     );
   }
 }
